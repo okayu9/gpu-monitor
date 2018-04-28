@@ -1,0 +1,4 @@
+[DEFAULT]
+gpu_servers = antwerpen gent charleroi luik
+web_server = 0.0.0.0
+port = 55555
