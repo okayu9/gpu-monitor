@@ -2,6 +2,8 @@
 
 This is a tool to monitor memory and utilization of the GPUs on the web.
 
+![gpu-monitor-image](https://user-images.githubusercontent.com/2512724/39401448-6b916808-4b80-11e8-8a25-6005a48c995b.png)
+
 ## Usage
 
 1. Create config.ini based on config.ini.example
