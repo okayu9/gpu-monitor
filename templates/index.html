@@ -16,7 +16,8 @@
           <th scope="col">Server name</th>
           <th scope="col">GPU ID</th>
           <th scope="col">GPU-Util. [%]</th>
-          <th scope="col">Memory-Usage [%]</th>
+          <th scope="col">Mem.-Usage [%]</th>
+          <th scope="col">Temp. [°C]</th>
           <th scope="col">Status</th>
         </tr>
       </thead>
@@ -30,6 +31,7 @@
             <td class="text-right {{ "table-danger" if line["using"] else "table-success" }}">{{ line["gpuid"] }}</td>
             <td class="text-right {{ "table-danger" if line["using"] else "table-success" }}">{{ line["util_gpu"] }}</td>
             <td class="text-right {{ "table-danger" if line["using"] else "table-success" }}">{{ line["util_memory"]}}</td>
+            <td class="text-right {{ "table-danger" if line["using"] else "table-success" }}">{{ line["temp"] }}</td>
             <td class="text-right {{ "table-danger" if line["using"] else "table-success" }}">{{ "Used" if line["using"] else "Free" }}</td>
           </tr>
           {% endfor %}
